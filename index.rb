@@ -13,7 +13,6 @@ def sandwich_request(ingredients, order)
       if order [counter] != food 
         return false
     end
-end
 counter+=1
 end 
 return true 
