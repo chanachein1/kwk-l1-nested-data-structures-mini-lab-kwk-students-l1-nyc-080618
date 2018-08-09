@@ -7,10 +7,16 @@ ingredients = [
 ]
 
 def sandwich_request(ingredients, order) 
-  puts ingredients [3][1]
-  puts ingredients [2][3]
-  puts ingredients [0][2]
+  ingredients.each do |part|
+    counter=0 
+    part.each do |food|
+      if order [counter] != food 
+        return false
+    end
 end
+counter+=1
+end 
+return true 
 
 sandwich_request(ingredients,["rye","ham","swiss","mayo"])
 
