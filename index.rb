@@ -16,6 +16,7 @@ def sandwich_request(ingredients, order)
     end
 counter+=1
 end 
+return true 
 
 
 sandwich_request(ingredients,["rye","ham","swiss","mayo"])
