@@ -12,8 +12,11 @@ def sandwich_request(ingredients, order)
     part.each do |food|
       if order [counter] != food 
         return false
+      end
+    end
 counter+=1
-return true 
+end 
+
 
 sandwich_request(ingredients,["rye","ham","swiss","mayo"])
 
