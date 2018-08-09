@@ -8,7 +8,7 @@ ingredients = [
 
 def sandwich_request(ingredients, order) 
   ingredients.each do |part|
-    counter=0 
+    counter = 0 
     part.each do |food|
       if order [counter] != food 
         return false
